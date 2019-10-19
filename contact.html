@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html>
-</html>
+<html lang="en">
+<!-- This page contains a form to contact me -->
 <head>
     <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     <div class="header">
+<!-- The logo that appears on the top-left of the page -->
         <h1 id="name">Kacie Hatley</h1>
         <nav>
-            <li><a href="index.html">About</a></li>
-            <li id="lighter">|</li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li id="lighter">|</li>
-            <li><a href="contact.html">Contact</a></li>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li class="lighter">|</li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="lighter">|</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav> 
-    </div>  
+    </div> 
+     <!--Main section for contact page -->
     <div class="main">
         <h1 id="mainHeader">Contact</h1>
+        <!-- Contact Form -->
         <form>
             <label>Name</label>
             <input type="text" name="fullname" placeholder="John Smith">
             <label>Email</label>
             <input type="text" name="email" placeholder="example@gmail.com">
             <label>Message</label>
-            <input id="message" type="text" name="message">
+            <textarea id="message" name="message"></textarea>
             <button class="button">Submit</button>
         </form>
     </div>
+    <!-- Sticky Footer -->
+    <footer>
+        <p id="copyright">Copyright ©</p>
+    </footer>
 </body>
-<footer>
-    <p id="copyright">Copyright</p>
-</footer>
+</html>

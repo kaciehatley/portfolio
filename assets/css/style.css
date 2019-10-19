@@ -53,7 +53,7 @@ a {
     color: #777777;
 }
 
-#lighter {
+.lighter {
     color: #cfcfcf;
 }
 
@@ -96,14 +96,14 @@ a {
     margin: 20px 40px;
 }
 
-#labels {
+.labels {
     position: absolute;
     z-index: 2;
     background-color: #4aaaa5;
     color: white;
     padding: 10px;
     left: 40px;
-    bottom: 20px;
+    bottom: 40px;
     width: 280px;
     text-align: center;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -113,6 +113,7 @@ a {
     float: left;
     padding: 0px 20px 5px 0px;
     margin-top: 20px;
+    width: 200px;
 }
 
 footer {
@@ -131,7 +132,7 @@ footer {
     color: white;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 11px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 label {
@@ -146,8 +147,17 @@ input {
     width: 100%;
     padding: 5px;
 }
+
+input::placeholder {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #cfcfcf; 
+    font-size: 12px;
+}
  #message {
-     height: 180px;
+    height: 180px;
+    width: 100%;
+    padding: 5px;
+    border-color: #cfcfcf; 
  }
 
 .button {
@@ -163,3 +173,4 @@ input {
     margin-top: 20px;
     border: none;
 }
+
